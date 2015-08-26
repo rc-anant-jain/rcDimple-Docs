@@ -1,1 +1,17 @@
-<p>This is the ApiDocs view.</p>
+<div ng-repeat="directive in data.Directives">
+	<div style="float:left;">
+		{{directive.name}}
+		<br> {{directive.Description}}
+		<div ng-repeat="(key,value) in directive.Attributes">
+			<div style="width:49.5%;float:left;border:0.25% solid black">
+				{{key}}
+			</div>
+			<div style="width:49.5%;float:left;border:0.25% solid black">
+				{{value.Type}}
+				{{value.Description}}
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr style="width:100%;"/>
+</div>

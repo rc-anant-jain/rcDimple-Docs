@@ -1,0 +1,261 @@
+{
+	"Directives": [
+		{
+			"name": "Chart",
+			"Description": "Directive to generate basic chart object",
+			"Attributes": {
+				"data": {
+					"Type": "Two Way Binding",
+					"Description": ""
+				},
+				"distributed-data": {
+					"Type": "Two Way Binding",
+					"Description": ""
+				},
+				"height": {
+					"Type": "One Way Binding",
+					"Description": ""
+				},
+				"width": {
+					"Type": "One Way Binding",
+					"Description": ""
+				},
+				"transition": {
+					"Type": "One Way Binding",
+					"Description": ""
+				},
+				"title": {
+					"Type": "One Way Binding",
+					"Description": ""
+				},
+				"draw": {
+					"Type": "One Way Binding",
+					"Description": ""
+				},
+				"color": {
+					"Type": "Two Way Binding",
+					"Description": ""
+				}
+			}
+		},
+		{
+			"name": "X Axis",
+			"Description": "Creates an axis for determining horizontal positioning. The first x axis created will cross the first y axis at zero. The second will be positioned at the top of the chart. Any further x axes will be hidden but can still be used for positioning.",
+			"Attributes": {
+				"field": {
+					"Type": "",
+					"Description": "Define from which data field the axis is generated"
+				},
+				"type": {
+					"Type": "",
+					"Description": "The type of axis to be generated. Options can be Category , Measure , Percent, Time"
+				},
+				"group-by": {
+					"Type": "",
+					"Description": "The order in which series are added will determine the order they are drawn"
+				},
+				"format": {
+					"Type": "",
+					"Description": "Defines the tick format"
+				},
+				"order-by": {
+					"Type": "",
+					"Description": "Add a rule by which the values in a group on a category axis will be ordered"
+				},
+				"title": {
+					"Type": "",
+					"Description": "title to be displayed with the axis"
+				},
+				"show-line": {
+					"Type": "",
+					"Description": "Show Axis line True/False"
+				},
+				"show-axis": {
+					"Type": "",
+					"Description": "Show Axis True/False"
+				},
+				"text-direction": {
+					"Type": "",
+					"Description": "Rotate axis ticks by 90 , 180, 270"
+				},
+				"prefix": {
+					"Type": "",
+					"Description": "prepend a text to axis ticks"
+				},
+				"suffix": {
+					"Type": "",
+					"Description": "append a text to axis ticks"
+				}
+			}
+		},
+		{
+			"name": "Y Axis",
+			"Description": "Creates an axis for determining vertical positioning. The first y axis created will cross the first x axis at zero. The second will be positioned at the right of the chart. Any further y axes will be hidden but can still be used for positioning",
+			"Attributes": {
+				"field": {
+					"Type": "",
+					"Description": "Define from which data field the axis is generated"
+				},
+				"type": {
+					"Type": "",
+					"Description": "The type of axis to be generated. Options can be Category , Measure , Percent, Time"
+				},
+				"group-by": {
+					"Type": "",
+					"Description": "The order in which series are added will determine the order they are drawn"
+				},
+				"format": {
+					"Type": "",
+					"Description": "Defines the tick format"
+				},
+				"order-by": {
+					"Type": "",
+					"Description": "Add a rule by which the values in a group on a category axis will be ordered"
+				},
+				"title": {
+					"Type": "",
+					"Description": "title to be displayed with the axis"
+				},
+				"show-line": {
+					"Type": "",
+					"Description": "Show Axis line True/False"
+				},
+				"show-axis": {
+					"Type": "",
+					"Description": "Show Axis True/False"
+				},
+				"text-direction": {
+					"Type": "",
+					"Description": "Rotate axis ticks by 90 , 180, 270"
+				},
+				"prefix": {
+					"Type": "",
+					"Description": "prepend a text to axis ticks"
+				},
+				"suffix": {
+					"Type": "",
+					"Description": "append a text to axis ticks"
+				}
+			}
+		},
+		{
+			"name": "Z Axis",
+			"Description": " Creates an axis for determining scale of elements. This axis does not render any visual elements and currently only affects bubble plots.",
+			"Attributes": {
+				"field": {
+					"Type": "",
+					"Description": "The data field which is used to generate axis"
+				},
+				"title": {
+					"Type": "",
+					"Description": "title to be displayed with the axis"
+				},
+				"min": {
+					"Type": "",
+					"Description": "Override the minimum value retrieved from field"
+				},
+				"max": {
+					"Type": "",
+					"Description": "Override the maximum value retrieved from field"
+				}
+			}
+		},
+		{
+			"name": "Line",
+			"Description": "Used to plot line charts",
+			"Attributes": {
+				"field": {
+					"Type": "One Way Binding",
+					"Description": ""
+				},
+				"filter": {
+					"Type": "One Way Binding",
+					"Description": "title to be displayed with the axis"
+				},
+				"yaxis": {
+					"Type": "One Way Binding",
+					"Description": "Override the minimum value retrieved from field"
+				},
+				"data": {
+					"Type": "Two Way Binding",
+					"Description": "Override the maximum value retrieved from field"
+				}
+			}
+		},
+		{
+			"name": "bar",
+			"Description": "Used to plot bar charts",
+			"Attributes": {
+				"field": {
+					"Type": "",
+					"Description": ""
+				},
+				"category": {
+					"Type": "",
+					"Description": ""
+				},
+				"filter": {
+					"Type": "",
+					"Description": ""
+				},
+				"yaxis": {
+					"Type": "",
+					"Description": ""
+				},
+				"data": {
+					"Type": "",
+					"Description": ""
+				},
+				"type": {
+					"Type": "",
+					"Description": ""
+				}
+			}
+		},
+		{
+			"name": "area",
+			"Description": "",
+			"Attributes": {
+				"field": {
+					"Type": "",
+					"Description": ""
+				},
+				"filter": {
+					"Type": "",
+					"Description": ""
+				},
+				"yaxis": {
+					"Type": "",
+					"Description": ""
+				},
+				"data": {
+					"Type": "",
+					"Description": ""
+				}
+			}
+		},
+		{
+			"name": "bubble",
+			"Description": "",
+			"Attributes": {
+				"field": {
+					"Type": "",
+					"Description": ""
+				},
+				"filter": {
+					"Type": "",
+					"Description": ""
+				},
+				"yaxis": {
+					"Type": "",
+					"Description": ""
+				},
+				"data": {
+					"Type": "",
+					"Description": ""
+				}
+			}
+			}
+		}
+	]
+}
